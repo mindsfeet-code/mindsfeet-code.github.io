@@ -1,1 +1,16 @@
-I’m really sorry, but I’ve come down with something and don’t want to risk passing it along—especially since you’ll be traveling to other locations. I’ll have to cancel our meeting tomorrow. I hope your visit goes smoothly, and I’d love to reconnect once I’m better.
+Step 3: Restore with KMS Key
+When restoring in the destination account, you can either:
+Option A: Use the source account's KMS key
+aws rds restore-db-instance-from-db-snapshot \
+    --db-instance-identifier my-restored-db \
+    --db-snapshot-identifier arn:aws:rds:region:source-account-id:snapshot:snapshot-name \
+    --kms-key-id arn:aws:kms:region:source-account-id:key/key-id
+
+Option B: Re-encrypt with destination account's KMS key
+aws rds restore-db-instance-from-db-snapshot \
+    --db-instance-identifier my-restored-db \
+    --db-snapshot-identifier arn:aws:rds:region:source-account-id:snapshot:snapshot-name \
+    --kms-key-id arn:aws:kms:region:destination-account-id:key/destination-key-id
+
+Quick Tip
+If you want the destination account to fully own the database, use Option B (re-encrypt with their own KMS key). This removes the dependency on the source account's key.
