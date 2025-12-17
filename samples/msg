@@ -1,16 +1,13 @@
-Step 3: Restore with KMS Key
-When restoring in the destination account, you can either:
-Option A: Use the source account's KMS key
-aws rds restore-db-instance-from-db-snapshot \
-    --db-instance-identifier my-restored-db \
-    --db-snapshot-identifier arn:aws:rds:region:source-account-id:snapshot:snapshot-name \
-    --kms-key-id arn:aws:kms:region:source-account-id:key/key-id
+Ollama Crash Course: Build Local LLM powered Apps 
+https://www.amazon.com/gp/product/B0DXB4SWG9/
 
-Option B: Re-encrypt with destination account's KMS key
-aws rds restore-db-instance-from-db-snapshot \
-    --db-instance-identifier my-restored-db \
-    --db-snapshot-identifier arn:aws:rds:region:source-account-id:snapshot:snapshot-name \
-    --kms-key-id arn:aws:kms:region:destination-account-id:key/destination-key-id
+LangChain Crash Course: Build OpenAI LLM powered Apps
+https://www.amazon.com/gp/product/B0CHHHX118/
 
-Quick Tip
-If you want the destination account to fully own the database, use Option B (re-encrypt with their own KMS key). This removes the dependency on the source account's key.
+AI Agents and Workflows Crash Course
+https://www.amazon.com/gp/product/B0FM3RLZNM/
+
+https://www.packtpub.com/en-us
+Building AI Agents with LLMs, RAG, and Knowledge Graphs
+Generative AI with LangChain
+Unlocking Data with Generative AI and RAG
