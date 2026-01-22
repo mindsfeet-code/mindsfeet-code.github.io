@@ -45,6 +45,23 @@
     <a href="https://medium.com/@zeta-decoded/zetas-lakehouse-journey-a-composable-scalable-and-federated-architecture-df0ab5f19c3a">Zeta’s Lakehouse Journey: A Composable, Scalable, and Federated Architecture </a>
     <p>2026-01-13</p>
     <p>Zeta built a composable, scalable, and federated Lakehouse architecture with Apache Iceberg on S3Table/AWS Glue Catalog and a multi-account federated setup to unify heterogeneous data from acquisitions, enable secure cross-team access without duplication, support diverse compute engines (Spark, Snowflake, ClickHouse, and Trino) for AI/marketing workloads, and ensure governance, schema evolution, and vendor independence. </p>
+
+    <a href="https://github.com/matsonj/mviz">mviz (GitHub Repo)</a>
+    <p> </p>
+    <p>mviz is a lightweight tool that lets you turn small JSON specs into polished HTML or PDF reports through Claude, so you can explore data, iterate quickly, and share results without building dashboards or infrastructure. It focuses on fast, AI-native analysis workflows with minimal boilerplate and high-quality static outputs that are easy to export and reuse.</p>
+
+    <a href="https://towardsdatascience.com/you-probably-dont-need-a-vector-database-for-your-rag-yet/">You Probably Don't Need a Vector Database for Your RAG — Yet</a>
+    <p>2026-01-20</p>
+    <p>For small-to-medium RAG pipelines, NumPy and scikit-learn can deliver millisecond-level in-memory vector search on millions of records, eliminating the overhead and complexity of dedicated vector databases like Pinecone or Weaviate. Using pure matrix multiplication and tree-based search (KD/Ball-Tree), typical workloads up to ~1.5GB of embeddings (e.g., 1M vectors × 384-dim) perform efficiently without network serialization or CRUD demands. Transition to vector databases only when persistence, high-frequency updates, metadata filtering, or RAM limits are required.</p>
+
+    <a href="https://www.astronomer.io/blog/building-data-pipelines-like-assembly-lines/">Building Data Pipelines Like Assembly Lines</a>
+    <p>2026-01-19</p>
+    <p>A small data engineering team stopped building one-off Airflow pipelines and instead created a declarative factory where every dataset follows the same write, test, and publish pattern. By encoding testing, documentation, dependency management, and safety into reusable components, they can ship new pipelines in hours instead of days and avoid bad data reaching production.</p>
+
+    <a href="https://medium.com/@sanjeebmeister/apache-spark-performance-tuning-on-amazon-emr-a-complete-guide-part2-3a0deda7d0c7">Apache Spark Performance Tuning on Amazon EMR</a>
+    <p>2026-01-19</p>
+    <p>Optimal Spark performance on EMR demands strategic tuning, rather than additional compute, to prevent wasted costs and degradation from shuffle overhead, GC pressure, and network contention. Key optimizations include executor sizing, memory management, partition and shuffle tuning, caching, column/prune elimination, predicate pushdown, handling small files, and leveraging Z-ordering for “haystack queries”. Benchmarks show a 10x difference in 1TB S3 read times based solely on data organization and configuration.</p>
+    
     
     <a href=""> </a>
     <p> </p>
