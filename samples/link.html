@@ -62,6 +62,21 @@
     <p>2026-01-19</p>
     <p>Optimal Spark performance on EMR demands strategic tuning, rather than additional compute, to prevent wasted costs and degradation from shuffle overhead, GC pressure, and network contention. Key optimizations include executor sizing, memory management, partition and shuffle tuning, caching, column/prune elimination, predicate pushdown, handling small files, and leveraging Z-ordering for “haystack queries”. Benchmarks show a 10x difference in 1TB S3 read times based solely on data organization and configuration.</p>
     
+    <a href="https://dropbox.tech/machine-learning/vp-josh-clemm-knowledge-graphs-mcp-and-dspy-dash">Engineering VP Josh Clemm on How We Use Knowledge Graphs, MCP, and DSPy in Dash </a>
+    <p>2026-01-28</p>
+    <p> By giving Dash access to proprietary work content, it unifies search, Q&A, and agentic tasks across Dropbox files and third-party apps. Dash ingests data via custom connectors, generates multimodal embeddings and knowledge graphs for entity relationships, and uses hybrid retrieval (BM25 + dense vectors) for fast retrieval. It optimizes MCP tool calling and tunes 30+ prompts (including LLM-as-judge) for better relevance, fewer disagreements, and easier model iteration.</p>
+    
+    <a href="https://loglevelinfo.substack.com/p/how-i-structure-my-data-pipelines-a20">How I Structure My Data Pipelines: The Silver Layer </a>
+    <p>2026-01-29</p>
+    <p>The Silver layer combines Medallion (Bronze-Silver-Gold) with Kimball dimensional modeling, serving as the core by organizing data into business-domain schemas with facts (granular events) and dimensions (attributes with surrogate keys), using intermediates for reusable transformations, and RLS/CLM access controls. This design ensures predictability, schema evolution, isolation of business logic in Silver, and composability. </p>
+    
+    <a href="https://netflixtechblog.medium.com/data-bridge-how-netflix-simplifies-data-movement-36d10d91c313"> Data Bridge: How Netflix simplifies data movement</a>
+    <p> </p>
+    <p>Netflix's Data Bridge unifies and abstracts batch data movement across more than three dozen source-destination pairs, eliminating fragmentation from bespoke tools. As a programmable control plane, it orchestrates ~300,000 jobs per week via a no-code/low-code interface, intent-based API, and YAML configs, centralizing metadata, governance, and job management. The platform's pluggable architecture streamlines connector contributions and enables seamless transitions to new data movement implementations. </p>
+    
+    <a href="https://openai.com/index/inside-our-in-house-data-agent/">Inside OpenAI's in-house data agent </a>
+    <p>2026-01-29</p>
+    <p>OpenAI built a bespoke internal AI data agent powered by GPT-5 that lets employees ask natural-language questions and get accurate, contextual data insights end to end, from table discovery to analysis and reporting. It combines code-aware data context, institutional knowledge, memory, and continuous evaluation to deliver fast, reliable analytics at OpenAI's scale. </p>
     
     <a href=""> </a>
     <p> </p>
