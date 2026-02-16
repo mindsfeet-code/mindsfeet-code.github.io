@@ -88,6 +88,15 @@
     <a href="https://www.infoworld.com/article/4127318/the-super-bowl-standard-architecting-distributed-systems-for-massive-concurrency.html">The ‘Super Bowl' standard: Architecting distributed systems for massive concurrency </a>
     <p> 2026-02-05</p>
     <p>Surviving extreme load events like the “Super Bowl standard” requires more than auto-scaling. Critical architectural patterns include aggressive load shedding based on business priority, strict tenancy isolation (bulkheads/circuit breakers), and sophisticated request collapsing to prevent cache stampedes. These strategies, combined with regular “game day” drills that simulate 50%+ above-peak loads, ensure systems fail gracefully, maintaining core functionality under duress. </p>
+
+    <a href="https://engineering.fb.com/2026/02/09/data-center-engineering/building-prometheus-how-backend-aggregation-enables-gigawatt-scale-ai-clusters/"> Building Prometheus: How Backend Aggregation Enables Gigawatt-Scale AI Clusters</a>
+    <p> 2026-02-09</p>
+    <p> Meta's Prometheus AI cluster will deliver 1 GW of capacity by interconnecting tens of thousands of GPUs across numerous data centers, enabled by the Backend Aggregation (BAG) network. BAG employs modular Jericho3 ASIC-powered chassis, petabit-level inter-BAG bandwidth (up to 48 Pbps per region pair), and advanced Ethernet-based topologies with eBGP routing and MACsec security. Precise oversubscription management and distributed architecture ensure high-performance, resilient networking.</p>
+    
+    <a href="https://netflixtechblog.medium.com/high-throughput-graph-abstraction-at-netflix-part-i-e88063e6f6d5">High-Throughput Graph Abstraction at Netflix: Part I </a>
+    <p> 2026-02-10</p>
+    <p> Netflix's Graph Abstraction processes up to 10 million ops/sec across 650TB of graph data, integrating seamlessly with their KV and time-series abstractions for cost-efficient, low-latency (single-digit ms) access and strong eventual consistency. It employs a modular Property Graph model, fine-grained schema management, advanced caching with EVCache, and robust asynchronous operations for scalability and resilience. This architecture enables rapid traversals, fine schema control, and reliable multi-region operation.</p>
+
     
     <a href=""> </a>
     <p> </p>
